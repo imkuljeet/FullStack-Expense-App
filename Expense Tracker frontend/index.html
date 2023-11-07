@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Expense Tracker</title>
+</head>
+<body>
+    <form onsubmit="saveOnSTorage(event)">
+    <label for="expAmt">Choose Expense Amount :</label>
+    <input type="number" name="expense" id="expAmt">
+    <label for="descrip">Choose Description :</label>
+    <input list="ourdata" name="description" id="descrip" autocomplete="off">
+<datalist id="ourdata">
+    <option value="Petrol">
+    <option value="On Vacation">
+    <option value="Diesel">
+    <option value="Hello">
+    <option value="Movies">
+    <option value="Water Park">
+</datalist>
+<label for="category">Choose a Category:</label>
+<select name="Category" id="category">
+    <option value="Movies">Movies</option>
+    <option value="On Vacation">Vacation</option>
+    <option value="Diesel">Diesel</option>
+    <option value="Water Park">Water Park</option>
+    <option value="WildLife Sanctuary">Wildlife Sanctuary</option>
+</select>
+<button id="addExpenseButton" type="submit">Add Expense</button>
+</form>
+<ul id="ourlist">
+
+</ul>
+<script src="main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+</body>
+</html>
